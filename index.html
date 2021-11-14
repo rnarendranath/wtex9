@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ELECTRIC BILL CALCULATOR</title>
+        <script src="https://kit.fontawesome.com/f377f4f9d5.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+        <script type="text/javascript" src="process.js" defer></script>
+
+    </head>
+    <style>
+       
+        #b1{ color:rgb(193, 236, 75);}
+        #b6{color:red;}
+        #b7{color:snow;}
+        #b3{color:snow;text-decoration: none;}
+ 
+        #b5:hover{background-color: thistle;}
+        #x1{color: blue;}
+        #l1{color:rgb(98, 233, 170)}
+        #c1{color:ghostwhite;}
+        #c1:hover{color:palevioletred;}
+        #m1{background-color: lightsteelblue;color: lightyellow;}
+        #m2:hover{color:blue;background-color: lightgreen;}
+        th{padding-left: 50px;padding: 20px;}
+        #btu{font-family:'Copperplate';box-shadow: rgb(103, 236, 230) 2px 2px 2px;}
+
+    </style>
+<body style="background-color: aqua;">
+
+   <br><br><br><br><br>
+   <center>
+    <form id="f1" style="color: rgba(82, 194, 228, 0.966); background-color: rgb(41, 90, 224);width: 80%;height: 80%;">
+      <br><Fieldset style="width: 50%;background-color: rgb(41, 90, 224); ">
+        
+          <legend style="display: center;color:rgb(236, 255, 66)"><b> ELECTRIC BILL CALCULATION</b></legend>
+          <br>
+    <table>
+     <tr>
+       <th><label for="tariff">TARIFF CHECK :</label></th>
+       <th><select name="tariff" id="tariff" style="width: 180px;">
+                 <option value="None">--- Selext a traiff ---</option>
+                 <option value="Domestic">Domestic</option>
+                 <option value="Commercial">Commercial</option>
+          </select></th>
+     </tr>
+     <tr>
+       <th><label for="unit1"> NO.OF UNITS CONSUMED : </label></th>
+       <th><input type="number" name="unit1" id="unit1"> </th>
+      </tr>
+      <tr>
+        <th><label for="load"> CONTRACTED LOAD  : </label></th>
+        <th><input type="number" name="load" id="load"> </th>
+       </tr>
+    <tr>
+      <th  style="text-align: center;" colspan="2">
+        <button type="submit" style="background-color: rgb(255, 0, 0);color: rgb(255, 255, 255);">Submit</button>
+      </th>
+    </tr>
+     <tr>
+       <th style="color: rgb(0, 0, 0);">Consumed Unit : </th>
+       <th style="text-align: center;"><span style="color:whitesmoke;" id="s1"></span></th>
+     </tr>
+     <tr>
+       <th style="color:rgb(0, 0, 0) ;">Electric Bill : </th>
+       <th style="text-align: center;"><span style="color:whitesmoke;" id="s2"></span></th>
+      </tr>
+     </table>
+   </form>
+  </Fieldset>
+
+  </center>
+</body>
+</html>
